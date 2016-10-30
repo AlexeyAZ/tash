@@ -1,0 +1,184 @@
+@media screen and (max-width: 1366px) {
+    .container {
+        width: @width-container-md;
+    }
+    .header {
+        font-size: 0.8em;
+    }
+    .header__nav-item {
+        margin-right: 20px;
+    }
+    .services__gallery-item {
+        height: @height-services-item-md;
+    }
+    .services__gallery-description {
+        font-size: @height-services-gallery-font-md;
+        height: @height-services-gallery-description-md;
+    }
+    .open-service__gallery {
+        width: @width-open-service-gallery-md;
+    }
+    .open-service__text-container {
+        padding-left: @padding-open-service-text-container-md;
+        padding-right: @padding-open-service-text-container-md;
+    }
+    .open-service__photo {
+        height: @height-open-service-photo-md;
+        width: @width-open-service-photo-md;
+    }
+    .open-service__controls {
+        font-size: @font-size-open-service-controls-md;
+    }
+}
+@media screen and (max-width: 1060px) {
+    .container {
+        width: @width-container-sm;
+    }
+    .services__gallery-item {
+        height: @height-services-item-sm;
+    }
+    .open-service__gallery {
+        width: @width-open-service-gallery-sm;
+    }
+}
+@media screen and (max-width: 960px) {
+    .container {
+        width: @width-container-xs;
+        &.contacts__container {
+            flex-wrap: wrap;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .header__container {
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .header__nav {
+        order: 4;
+        height: 0;
+        width: 100%;
+    }
+    .header__nav-list {
+        flex-wrap: wrap;
+    }
+    .header__nav-item {
+        font-size: 1.3em;
+        margin-top: 30px;
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+        &:last-child {
+            margin-bottom: 20px;
+        }
+    }
+    .header__btn_menu {
+        display: block;
+    }
+    .services__gallery-item {
+        height: @height-services-item-xs;
+    }
+    .about__man {
+        width: 50%;
+    }
+    .contacts__item {
+        width: 100%;
+    }
+    .contacts__item_description {
+        padding-left: @padding-container-xs;
+    }
+    .contacts__table {
+        margin-top: 20px;
+    }
+    .contacts__col {
+        padding: 20px 0;
+        &:first-child {
+            padding-right: 20px;
+            width: auto;
+        }
+    }
+    .contacts__map {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: @padding-container-xs;
+        padding-right: @padding-container-xs;
+    }
+    .header__btn-container {
+        display: flex;
+        justify-content: center;
+        order: 3;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .heading {
+        font-size: 2em;
+    }
+    .description {
+        padding-bottom: 100px;
+    }
+    .description__title {
+        font-size: 1.4em;
+        margin-top: 250px;
+    }
+    .description__head {
+        font-size: 2em;
+    }
+    .services__gallery-item {
+        height: @height-services-item-md;
+        width: 100%;
+    }
+    .about {
+        padding-top: 100px;
+    }
+    .about__col {
+        &:first-child {
+            min-width: 0;
+            padding-right: 20px;
+        }
+    }
+    .partners {
+        padding-top: 100px;
+    }
+    .partners__item {
+        margin-top: 50px;
+        padding: 0 20px;
+        width: @width-partners-item-xs;
+    }
+    .partners__description {
+        margin-top: 40px;
+    }
+    .contacts__item_description {
+        padding-top: 90px;
+    }
+    .footer__nav-list {
+        flex-wrap: wrap;
+    }
+    .footer__nav-link {
+        text-align: center;
+        margin-bottom: 30px;
+        margin-right: 0;
+        width: 100%;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .open-service__gallery {
+        width: @width-open-service-gallery-xs;
+    }
+    .open-service__text-container {
+        padding-left: @padding-open-service-text-container-xs;
+        padding-right: @padding-open-service-text-container-xs;
+    }
+    .open-service__photo {
+        height: @height-open-service-photo-xs;
+    }
+    .open-service__img-description {
+        font-size: 1em;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        min-height: 0;
+    }
+}

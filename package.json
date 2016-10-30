@@ -1,0 +1,32 @@
+{
+  "name": "new_project",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Alexey-wm",
+  "license": "ISC",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "prestart": "npm install",
+    "postinstall": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cssnano": "*",
+    "gulp-imagemin": "*",
+    "gulp-less": "*",
+    "gulp-rigger": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "gulp-watch": "*",
+    "imagemin-pngquant": "*",
+    "pump": "*",
+    "gulp-connect": "*"
+  }
+}
