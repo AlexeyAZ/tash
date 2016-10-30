@@ -196,19 +196,21 @@ section {
     flex-wrap: wrap;
 }
 .services__gallery-item {
+    user-select: none;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     height: @height-services-item-xl;
     width: 50%;
-    &:hover {
-        .services__gallery-description {
-            height: 100%;
-        }
-        .services__gallery-border {
-            opacity: 0.2;
-        }
+
+}
+.services__gallery-item_hover {
+    .services__gallery-description {
+        height: 100%;
+    }
+    .services__gallery-border {
+        opacity: 0.2;
     }
 }
 .services__gallery-item_img1 {

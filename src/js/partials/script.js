@@ -94,12 +94,26 @@
 
             popupGallery.slick("slickGoTo", (parseInt(slideNumber)), true);
             $("body").addClass("show-gallery");
+            $(".services__gallery-item").trigger("mouseleave");
         });
 
+        $(".services__gallery-item").hover(
+            function () {
+                $(this).addClass("services__gallery-item_hover");
+            },
+            function () {
+                $(this).removeClass("services__gallery-item_hover");
+            }
+        );
 
-        // Клик по кнопке закрыть в попапе
-        $("#closeGalleryBtn").on("click", function(){
-            $("body").removeClass("show-gallery");
+
+        // Закрыть попап
+        $(".open-service").on("click", function(e) {
+            var self = $(e.target);
+
+            if (self.hasClass("open-service") || self.hasClass("open-service__close-btn")) {
+                $("body").removeClass("show-gallery");
+            }
         });
 
         $(window).on("scroll", function() {
